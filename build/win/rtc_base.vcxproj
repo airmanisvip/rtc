@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\rtc_base\strings\audio_format_to_string.cc" />
+    <ClCompile Include="..\..\rtc_base\checks.cc" />
+    <ClCompile Include="..\..\rtc_base\criticalsection.cc" />
+    <ClCompile Include="..\..\rtc_base\logging.cc" />
+    <ClCompile Include="..\..\rtc_base\platform_thread.cc" />
+    <ClCompile Include="..\..\rtc_base\platform_thread_types.cc" />
+    <ClCompile Include="..\..\rtc_base\rate_limiter.cc" />
+    <ClCompile Include="..\..\rtc_base\noop.cc" />
+    <ClCompile Include="..\..\rtc_base\bitbuffer.cc" />
+    <ClCompile Include="..\..\rtc_base\bitrateallocationstrategy.cc" />
+    <ClCompile Include="..\..\rtc_base\bufferqueue.cc" />
+    <ClCompile Include="..\..\rtc_base\bytebuffer.cc" />
+    <ClCompile Include="..\..\rtc_base\copyonwritebuffer.cc" />
+    <ClCompile Include="..\..\rtc_base\event_tracer.cc" />
+    <ClCompile Include="..\..\rtc_base\file.cc" />
+    <ClCompile Include="..\..\rtc_base\flags.cc" />
+    <ClCompile Include="..\..\rtc_base\location.cc" />
+    <ClCompile Include="..\..\rtc_base\numerics\histogram_percentile_counter.cc" />
+    <ClCompile Include="..\..\rtc_base\numerics\sample_counter.cc" />
+    <ClCompile Include="..\..\rtc_base\pathutils.cc" />
+    <ClCompile Include="..\..\rtc_base\platform_file.cc" />
+    <ClCompile Include="..\..\rtc_base\race_checker.cc" />
+    <ClCompile Include="..\..\rtc_base\random.cc" />
+    <ClCompile Include="..\..\rtc_base\rate_statistics.cc" />
+    <ClCompile Include="..\..\rtc_base\ratetracker.cc" />
+    <ClCompile Include="..\..\rtc_base\timestampaligner.cc" />
+    <ClCompile Include="..\..\rtc_base\zero_memory.cc" />
+    <ClCompile Include="..\..\rtc_base\file_win.cc" />
+    <ClCompile Include="..\..\rtc_base\win\windows_version.cc" />
+    <ClCompile Include="..\..\rtc_base\asyncinvoker.cc" />
+    <ClCompile Include="..\..\rtc_base\asyncpacketsocket.cc" />
+    <ClCompile Include="..\..\rtc_base\asyncresolverinterface.cc" />
+    <ClCompile Include="..\..\rtc_base\asyncsocket.cc" />
+    <ClCompile Include="..\..\rtc_base\asynctcpsocket.cc" />
+    <ClCompile Include="..\..\rtc_base\asyncudpsocket.cc" />
+    <ClCompile Include="..\..\rtc_base\crc32.cc" />
+    <ClCompile Include="..\..\rtc_base\cryptstring.cc" />
+    <ClCompile Include="..\..\rtc_base\data_rate_limiter.cc" />
+    <ClCompile Include="..\..\rtc_base\filerotatingstream.cc" />
+    <ClCompile Include="..\..\rtc_base\fileutils.cc" />
+    <ClCompile Include="..\..\rtc_base\helpers.cc" />
+    <ClCompile Include="..\..\rtc_base\httpcommon.cc" />
+    <ClCompile Include="..\..\rtc_base\ipaddress.cc" />
+    <ClCompile Include="..\..\rtc_base\messagedigest.cc" />
+    <ClCompile Include="..\..\rtc_base\messagehandler.cc" />
+    <ClCompile Include="..\..\rtc_base\messagequeue.cc" />
+    <ClCompile Include="..\..\rtc_base\nethelper.cc" />
+    <ClCompile Include="..\..\rtc_base\nethelpers.cc" />
+    <ClCompile Include="..\..\rtc_base\network.cc" />
+    <ClCompile Include="..\..\rtc_base\networkmonitor.cc" />
+    <ClCompile Include="..\..\rtc_base\nullsocketserver.cc" />
+    <ClCompile Include="..\..\rtc_base\openssladapter.cc" />
+    <ClCompile Include="..\..\rtc_base\opensslcertificate.cc" />
+    <ClCompile Include="..\..\rtc_base\openssldigest.cc" />
+    <ClCompile Include="..\..\rtc_base\opensslidentity.cc" />
+    <ClCompile Include="..\..\rtc_base\opensslsessioncache.cc" />
+    <ClCompile Include="..\..\rtc_base\opensslstreamadapter.cc" />
+    <ClCompile Include="..\..\rtc_base\opensslutility.cc" />
+    <ClCompile Include="..\..\rtc_base\physicalsocketserver.cc" />
+    <ClCompile Include="..\..\rtc_base\proxyinfo.cc" />
+    <ClCompile Include="..\..\rtc_base\rtccertificate.cc" />
+    <ClCompile Include="..\..\rtc_base\rtccertificategenerator.cc" />
+    <ClCompile Include="..\..\rtc_base\signalthread.cc" />
+    <ClCompile Include="..\..\rtc_base\socket.cc" />
+    <ClCompile Include="..\..\rtc_base\socketadapters.cc" />
+    <ClCompile Include="..\..\rtc_base\socketaddress.cc" />
+    <ClCompile Include="..\..\rtc_base\socketaddresspair.cc" />
+    <ClCompile Include="..\..\rtc_base\socketstream.cc" />
+    <ClCompile Include="..\..\rtc_base\ssladapter.cc" />
+    <ClCompile Include="..\..\rtc_base\sslcertificate.cc" />
+    <ClCompile Include="..\..\rtc_base\sslfingerprint.cc" />
+    <ClCompile Include="..\..\rtc_base\sslidentity.cc" />
+    <ClCompile Include="..\..\rtc_base\sslstreamadapter.cc" />
+    <ClCompile Include="..\..\rtc_base\stream.cc" />
+    <ClCompile Include="..\..\rtc_base\thread.cc" />
+    <ClCompile Include="..\..\rtc_base\logsinks.cc" />
+    <ClCompile Include="..\..\rtc_base\optionsfile.cc" />
+    <ClCompile Include="..\..\rtc_base\win32socketinit.cc" />
+    <ClCompile Include="..\..\rtc_base\win32socketserver.cc" />
+    <ClCompile Include="..\..\rtc_base\win32.cc" />
+    <ClCompile Include="..\..\rtc_base\win32filesystem.cc" />
+    <ClCompile Include="..\..\rtc_base\win32window.cc" />
+    <ClCompile Include="..\..\rtc_base\event.cc" />
+    <ClCompile Include="..\..\rtc_base\numerics\exp_filter.cc" />
+    <ClCompile Include="..\..\rtc_base\task_queue_win.cc" />
+    <ClCompile Include="..\..\rtc_base\sequenced_task_checker_impl.cc" />
+    <ClCompile Include="..\..\rtc_base\string_to_number.cc" />
+    <ClCompile Include="..\..\rtc_base\stringencode.cc" />
+    <ClCompile Include="..\..\rtc_base\strings\string_builder.cc" />
+    <ClCompile Include="..\..\rtc_base\stringutils.cc" />
+    <ClCompile Include="..\..\rtc_base\thread_checker_impl.cc" />
+    <ClCompile Include="..\..\rtc_base\timeutils.cc" />
+    <ClCompile Include="..\..\rtc_base\weak_ptr.cc" />
+    <ClCompile Include="..\..\rtc_base\memory\aligned_malloc.cc" />
+    <ClCompile Include="..\..\rtc_base\synchronization\rw_lock_wrapper.cc" />
+    <ClCompile Include="..\..\rtc_base\synchronization\rw_lock_win.cc" />
+    <ClCompile Include="..\..\rtc_base\experiments\congestion_controller_experiment.cc" />
+    <ClCompile Include="..\..\rtc_base\experiments\field_trial_parser.cc" />
+    <ClCompile Include="..\..\rtc_base\experiments\field_trial_units.cc" />
+    <ClCompile Include="..\..\rtc_base\experiments\alr_experiment.cc" />
+    <ClCompile Include="..\..\rtc_base\experiments\quality_scaling_experiment.cc" />
+    <ClCompile Include="..\..\rtc_base\experiments\rtt_mult_experiment.cc" />
+    <ClCompile Include="..\..\rtc_base\system\file_wrapper.cc" />
+    <ClCompile Include="..\..\rtc_base\time\timestamp_extrapolator.cc" />
+    <ClCompile Include="..\..\rtc_base\third_party\base64\base64.cc" />
+    <ClCompile Include="..\..\rtc_base\third_party\sigslot\sigslot.cc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{B0B30C52-38CD-4011-B595-A6E4EEBAECA0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>rtcbase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\lib\$(Configuration)\</OutDir>
+    <IntDir>rtc_base.dir\Debug\</IntDir>
+    <TargetName>rtc_base</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\lib\$(Configuration)\</OutDir>
+    <IntDir>rtc_base.dir\Release\</IntDir>
+    <TargetName>rtc_base</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;WEBRTC_USE_H264;WEBRTC_WIN;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;USE_BUILTIN_SW_CODECS;ABSL_ALLOCATOR_NOTHROW;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS;HAVE_SCTP;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;WEBRTC_ENABLE_PROTOBUF;FIELDTRIAL_TESTING_ENABLED;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../../;../../abseil-cpp;../../boringssl;../../boringssl/src/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;WEBRTC_USE_H264;WEBRTC_WIN;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;USE_BUILTIN_SW_CODECS;ABSL_ALLOCATOR_NOTHROW;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS;HAVE_SCTP;WEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE;WEBRTC_ENABLE_PROTOBUF;FIELDTRIAL_TESTING_ENABLED;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../../;../../abseil-cpp;../../boringssl;../../boringssl/src/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C76E4726-2646-3BD6-A96A-120FACDA19C0}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>boringssl</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">boringssl.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">boringssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">boringssl.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">boringssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\webrtc\Extract-WebRtc\out\third_party\boringssl\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">boringssl.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">boringssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\webrtc\Extract-WebRtc\out\third_party\boringssl\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">boringssl.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">boringssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WEBRTC_USE_H264;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WEBRTC_USE_H264;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WEBRTC_USE_H264;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WEBRTC_USE_H264;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WEBRTC_USE_H264;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WEBRTC_USE_H264;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WEBRTC_USE_H264;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WEBRTC_USE_H264;V8_DEPRECATION_WARNINGS;USE_AURA=1;NO_TCMALLOC;FULL_SAFE_BROWSING;SAFE_BROWSING_CSD;SAFE_BROWSING_DB_LOCAL;CHROMIUM_BUILD;_HAS_EXCEPTIONS=0;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=1;_SECURE_ATL;_USING_V110_SDK71_;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=0x0A000002;_WIN32_WINNT=0x0A00;WINVER=0x0A00;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;BORINGSSL_ALLOW_CXX_RUNTIME;BORINGSSL_IMPLEMENTATION;BORINGSSL_NO_STATIC_INITIALIZER;OPENSSL_SMALL;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..;E:\webrtc\Extract-WebRtc\out\third_party\boringssl\..\..\..\third_party\boringssl\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\boringssl\err_data.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_bitstr.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_bool.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_d2i_fp.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_dup.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_enum.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_gentm.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_i2d_fp.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_int.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_mbstr.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_object.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_octet.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_print.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_strnid.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_time.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_type.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_utctm.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\a_utf8.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\asn1_lib.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\asn1_par.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\asn_pack.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\f_enum.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\f_int.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\f_string.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\tasn_dec.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\tasn_enc.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\tasn_fre.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\tasn_new.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\tasn_typ.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\tasn_utl.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\asn1\time_support.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\base64\base64.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\bio.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\bio_mem.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\connect.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\fd.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\file.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\hexdump.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\pair.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\printf.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\socket.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bio\socket_helper.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bn_extra\bn_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bn_extra\convert.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\buf\buf.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bytestring\asn1_compat.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bytestring\ber.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bytestring\cbb.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bytestring\cbs.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\bytestring\unicode.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\chacha\chacha.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\cipher_extra.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\derive_key.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\e_aesccm.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\e_aesctrhmac.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\e_aesgcmsiv.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\e_chacha20poly1305.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\e_null.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\e_rc2.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\e_rc4.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\e_tls.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cipher_extra\tls_cbc.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cmac\cmac.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\conf\conf.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cpu-aarch64-fuchsia.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cpu-aarch64-linux.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cpu-arm-linux.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cpu-arm.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cpu-intel.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\cpu-ppc64le.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\crypto.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\curve25519\spake25519.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\dh\check.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\dh\dh.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\dh\dh_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\dh\params.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\digest_extra\digest_extra.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\dsa\dsa.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\dsa\dsa_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\ec_extra\ec_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\ecdh_extra\ecdh_extra.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\ecdsa_extra\ecdsa_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\engine\engine.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\err\err.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\digestsign.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\evp.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\evp_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\evp_ctx.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\p_dsa_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\p_ec.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\p_ec_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\p_ed25519.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\p_ed25519_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\p_rsa.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\p_rsa_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\pbkdf.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\print.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\scrypt.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\evp\sign.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\ex_data.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\fipsmodule\bcm.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\fipsmodule\is_fips.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\hkdf\hkdf.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\lhash\lhash.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\mem.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\obj\obj.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\obj\obj_xref.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pem\pem_all.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pem\pem_info.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pem\pem_lib.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pem\pem_oth.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pem\pem_pk8.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pem\pem_pkey.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pem\pem_x509.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pem\pem_xaux.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pkcs7\pkcs7.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pkcs7\pkcs7_x509.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pkcs8\p5_pbev2.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pkcs8\pkcs8.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pkcs8\pkcs8_x509.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\poly1305\poly1305.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\poly1305\poly1305_arm.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\poly1305\poly1305_vec.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\pool\pool.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\rand_extra\deterministic.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\rand_extra\forkunsafe.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\rand_extra\fuchsia.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\rand_extra\rand_extra.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\rand_extra\windows.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\rc4\rc4.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\refcount_c11.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\refcount_lock.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\rsa_extra\rsa_asn1.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\rsa_extra\rsa_print.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\stack\stack.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\thread.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\thread_none.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\thread_pthread.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\thread_win.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\a_digest.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\a_sign.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\a_strex.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\a_verify.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\algorithm.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\asn1_gen.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\by_dir.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\by_file.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\i2d_pr.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\rsa_pss.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\t_crl.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\t_req.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\t_x509.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\t_x509a.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_att.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_cmp.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_d2.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_def.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_ext.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_lu.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_obj.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_r2x.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_req.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_set.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_trs.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_txt.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_v3.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_vfy.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509_vpm.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509cset.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509name.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509rset.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x509spki.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_algor.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_all.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_attrib.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_crl.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_exten.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_info.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_name.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_pkey.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_pubkey.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_req.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_sig.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_spki.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_val.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_x509.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509\x_x509a.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\pcy_cache.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\pcy_data.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\pcy_lib.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\pcy_map.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\pcy_node.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\pcy_tree.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_akey.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_akeya.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_alt.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_bcons.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_bitst.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_conf.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_cpols.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_crld.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_enum.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_extku.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_genn.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_ia5.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_info.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_int.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_lib.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_ncons.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_ocsp.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_pci.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_pcia.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_pcons.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_pku.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_pmaps.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_prn.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_purp.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_skey.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_sxnet.c" />
+    <ClCompile Include="..\..\boringssl\src\crypto\x509v3\v3_utl.c" />
+    <ClCompile Include="..\..\boringssl\src\third_party\fiat\curve25519.c" />
+    <ClCompile Include="..\..\boringssl\src\ssl\bio_ssl.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\d1_both.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\d1_lib.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\d1_pkt.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\d1_srtp.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\dtls_method.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\dtls_record.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\handoff.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\handshake.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\handshake_client.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\handshake_server.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\s3_both.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\s3_lib.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\s3_pkt.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_aead_ctx.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_asn1.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_buffer.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_cert.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_cipher.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_file.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_key_share.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_lib.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_privkey.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_session.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_stat.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_transcript.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_versions.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\ssl_x509.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\t1_enc.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\t1_lib.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\tls13_both.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\tls13_client.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\tls13_enc.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\tls13_server.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\tls_method.cc" />
+    <ClCompile Include="..\..\boringssl\src\ssl\tls_record.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\webrtc\Extract-WebRtc\out\ZERO_CHECK.vcxproj">
+      <Project>{0C5F6F4C-2DC0-3DA2-8CC9-41D05924DBF9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
